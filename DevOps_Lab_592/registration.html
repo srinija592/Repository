@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1 
+        {
+            text-align: center;
+            color: brown;
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="lightblue">
+    <div class="container">
+        <h1>Registration Form</h1>
+        <br>
+        <br>
+
+        <form>
+            <div class="form-group">
+                <label for="firstname">Firstname:</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Lastname:</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male" id="male"> Male&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="female" id="female"> Female
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of birth:</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="languages">Languages known:</label>
+                <input type="checkbox" name="languages" value="telugu" id="telugu"> Telugu&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="languages" value="hindi" id="hindi"> Hindi&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="languages" value="english" id="english"> English
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <select name="course" id="course">
+                    <option value="course">Course</option>
+                    <option value="c">C</option>
+                    <option value="c++">C++</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phno">Phone number:</label>
+                <input type="text" name="phno" id="phno" value="+91" maxlength="13">
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Upload your photo:</label>
+                <input type="file" name="photo" id="photo" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="30" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="form-group">
+                <label for="retype-password">Re-Type Password:</label>
+                <input type="password" name="retype-password" id="retype-password">
+            </div>
+            <br>
+
+            <div class="form-actions">
+                <input type="submit" value="Register">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
